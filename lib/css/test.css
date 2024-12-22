@@ -6,9 +6,8 @@
 	padding: 0;
 }
 img {
-	max-width: 100%;
-	height: auto;
-	width: auto\9; /* ie8 */
+	width: 250px;
+	height: 350px;
 }
 /* set html5 elements to block */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -99,6 +98,27 @@ hr {
 	width: 95%;
 	text-align:left;
 }
+#backToTop {
+    position: fixed;
+    bottom: 20px; /* Abstand vom unteren Bildschirmrand */
+    right: 20px; /* Abstand vom rechten Bildschirmrand */
+    width: 40px;
+    height: 40px;
+    background-color: #b56576; /* Hintergrundfarbe */
+    color: #fff; /* Schriftfarbe */
+    border-radius: 50%; /* Rundes Symbol */
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px; /* Größe des Pfeilsymbols */
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Startet unsichtbar */
+}
+
+/* Beim Scrollen sichtbar machen */
+#backToTop.show {
+    display: block;
+}
 /************************************************************************************
 STRUCTURE
 *************************************************************************************/
@@ -166,7 +186,7 @@ NAV
     padding: 0 .5em; /* Gleich wie bei den anderen Links */
 }
 #main-nav a:hover {
-	color: #f186c5;
+	color:/* #f186c5*/#b56576;
 }
 #main-nav a.activ {
 	color:#fff;

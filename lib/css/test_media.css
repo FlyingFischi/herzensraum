@@ -14,7 +14,11 @@ smaller than 600
 
 html {
 -webkit-text-size-adjust: none;
-overflow-y: visible;
+overflow: auto;
+}
+img {
+    max-width: 100%; /* Bild skaliert maximal bis zur Breite des Containers */
+    height: auto; /* Verhältnis beibehalten */
 }
 #header {
 	background: url(../../images_herzensraum/2_Gänseblümchen.jpg) no-repeat right top #b56576;
@@ -23,16 +27,18 @@ overflow-y: visible;
 	padding: 0;
     width: 100%;
     overflow: hidden;
+    box-sizing: border-box;
 }
 #logo-container {
     text-align: center; /* Zentriert den Inhalt innerhalb des Containers */
-    margin: 0 auto; /* Zentriert den Container selbst */
+    margin: 0; /* Zentriert den Container selbst */
     padding: 0; /* Entfernt ungewollte Abstände */
     width: 100%; /* Optional: Vollständige Breite */
     display: flex; /* Flexbox für einfaches Zentrieren */
     flex-direction: column; /* Stapelt h1 und h2 vertikal */
     align-items: center; /* Zentriert die Inhalte horizontal */
     justify-content: center; /* Zentriert die Inhalte vertikal (falls nötig) */
+    box-sizing: border-box;
 }
 /* main nav */
 #main-nav {
@@ -86,7 +92,30 @@ h2 {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	text-align: center;
 	display: block;
-} 
+}
+/* CSS für den "Zurück zum Anfang"-Button */
+#backToTop {  /* Hier die ID angepasst */
+    position: fixed;
+    bottom: 15px; /* Abstand zum unteren Rand */
+    right: 15px; /* Abstand zum rechten Rand */
+    display: block; /* Button sichtbar machen */
+    width: 40px; /* Breite anpassen */
+    height: 40px; /* Höhe anpassen */
+    background-color: #b56576; /* Farbe anpassen */
+    color: #fff; /* Textfarbe */
+    border: none;
+    border-radius: 50%; /* Rundes Design */
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Schatten für mehr Sichtbarkeit */
+    z-index: 1000; /* Über andere Elemente legen */
+}
+
+#backToTop:hover {
+    background-color: #b56576; /* Farbe beim Hover ändern */
+}
+ 
 /**************** footer *********************/
 #footer {
 	height: 100px;
