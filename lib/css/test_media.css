@@ -22,6 +22,17 @@ overflow-y: visible;
 	margin: 0 0 7% 0;
 	padding: 0;
     width: 100%;
+    overflow: hidden;
+}
+#logo-container {
+    text-align: center; /* Zentriert den Inhalt innerhalb des Containers */
+    margin: 0 auto; /* Zentriert den Container selbst */
+    padding: 0; /* Entfernt ungewollte Abstände */
+    width: 100%; /* Optional: Vollständige Breite */
+    display: flex; /* Flexbox für einfaches Zentrieren */
+    flex-direction: column; /* Stapelt h1 und h2 vertikal */
+    align-items: center; /* Zentriert die Inhalte horizontal */
+    justify-content: center; /* Zentriert die Inhalte vertikal (falls nötig) */
 }
 /* main nav */
 #main-nav {
