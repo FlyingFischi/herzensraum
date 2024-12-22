@@ -1,1 +1,348 @@
-/
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+/************************************************************************************
+SCHRIFTEN EINBINDEN
+*************************************************************************************/
+@font-face {
+	font-family: 'BebasRegular';
+	src: url('../font/BEBAS___-webfont.eot');
+	src: url('../font/BebasNeue.otf') format('embedded-opentype'), url('../font/BEBAS___-webfont.woff') format('woff'), url('../font/BEBAS___-webfont.ttf') format('truetype'), url('../font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+body {
+	font: 0.78em/125% system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #6d6d6d;
+	height: 100%;
+}
+a {
+	color: #6d6d6d;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #39F;
+}
+p {
+	padding: 0 0 1.2em;
+	font-size: 1.15em;
+	line-height: 1.6em;
+	color: #6d6d6d;
+}
+.text p:first-child {
+	padding: 0;
+}
+/* list */
+
+li {
+	margin: 0 0 .5em 0;
+}
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5em;
+	/*margin: 20px 0 .4em;*/
+	color: #918787;
+}
+h1 {
+	font-size: 3.8em;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+}
+h2 {
+	font-size: 1.4em;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	left: 40%;
+}
+h3 {
+	font: normal 2.2em  Georgia;
+	color: #b56576/*#88a2b0;/*	margin: 0 0 10px 0;*/
+}
+h4 {
+	font-size: 1.8em;
+	margin: 0 0 1em;
+	font-weight: normal;
+}
+h5 {
+	font-size: 1.1em;
+}
+h6 {
+	font-size: 1em;
+}
+hr {
+	border: none;
+	border-top:#666 dotted 1px;
+	padding: 1.2em 0 0;
+	width: 95%;
+	text-align:left;
+}
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#all {
+	height:100%;
+	margin: 0 auto;
+}
+#pagewrap {
+	width: 850px;
+	height: 100%;
+	margin: 0 auto;
+}
+/************************************************************************************
+HEADER
+*************************************************************************************/ 
+
+#header {
+	height: 175px;
+	position: relative;
+	background: url(../../images_herzensraum/2_Gänseblümchen.jpg) no-repeat right top #b56576;
+	opacity: 0.9;
+	margin: 0 0 68px 0;
+	color: #fff;
+}
+
+#logo-container {
+	position: absolute;
+	right: 80%;
+    font-family: serif;
+	font-weight: 10;
+	color: #fff;
+	right: 2%;
+}
+/************************************************************************************
+NAV
+*************************************************************************************/ 
+
+#main-nav {
+	position: absolute;
+	right:-2%;
+	bottom: 0;
+	font-family: serif 14px/120% BebasRegular;
+	font-size: 1.3em;
+	font-weight: 600;
+	color: #fff;
+}
+#main-nav li {
+	float:left;
+	list-style:none;
+	margin: 0;
+    padding: 0;
+    line-height: 1; /* Einheitliche Höhe */
+}
+#main-nav li:last-child {
+	margin-right:35px;
+}
+#main-nav a {
+	text-decoration:none;
+	padding: 0 .5em 0 .5em;
+	color: #fff;
+	line-height: 1; /* Einheitliche Höhe */
+    display: inline-block; /* Verhindert vertikale Verschiebungen */
+}
+#main-nav a:last-child {
+    padding: 0 .5em; /* Gleich wie bei den anderen Links */
+}
+#main-nav a:hover {
+	color: #f186c5;
+}
+#main-nav a.activ {
+	color:#fff;
+}
+#main-nav span {
+    line-height: 1;
+    vertical-align: middle; /* Stellt sicher, dass das Trennzeichen mittig ausgerichtet ist */
+	margin: 5;
+}
+/************************************************************************************
+
+CONTENT
+*************************************************************************************/
+
+#content ul {
+	font-size: 1.15em;
+	line-height: 1.6em;
+	list-style-position:outside;
+	margin: 4% 0 6% 6%;
+}
+.text {
+	width:67%;
+	float:right;
+}
+span {
+	font-size: 1.4em;
+	margin: 0 0 1em;
+	font-weight: normal;}
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footer {
+	position:relative;
+	bottom:1px;
+	margin-top: -80px;
+	height: 80px;
+	clear: both;
+	/*background: url(../../images_herzensraum/2_Gänseblümchen.jpg) no-repeat bottom left #a9c8da;
+	opacity: 0.9;*/
+	background-color: #b56576;
+}
+#address {
+	width: 40%;
+	float:right;
+	margin-top: 1%;
+	color: #fff;
+}
+#address_up {
+	display:none;
+	margin-bottom:80px;
+}
+
+#address li, #address_up li {
+	float:left;
+	list-style:none;
+}
+#impress {
+	position: absolute;
+	right:2%;
+	bottom:8%;/*	font: normal 14px/120% BebasRegular;
+	color: #999; */
+}
+#footer a {
+	position:absolute;
+	right:0;
+	bottom:0;
+	font-style:italic;
+	color:#FFF;
+}
+/************************************************************************************
+FOMULAR
+*************************************************************************************/
+form {margin-bottom:5%;}
+legend {font-size:1.2em;}
+label {display:block;}
+fieldset {padding:3%;}
+
+.contact-section {
+    display: flex;
+    flex-direction: column; /* Geändert auf column, um die Elemente untereinander anzuordnen */
+    align-items: center;
+    max-width: 600px; /* Änderung auf max-width, um die Breite zu begrenzen */
+    margin: auto; /* Zentrieren des Formulars auf der Seite */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Hinzugefügt, um die Breite zu 100% zu setzen */
+}
+
+.form-group {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 1.15em;
+    color: #6d6d6d;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.label-group {
+    display: flex;
+    flex-direction: column; /* Geändert, um Labels untereinander anzuordnen */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    font-weight: 200;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    color: #b56576;
+    margin-top: 20px;
+    margin-right: auto; /* Hinzugefügt, um den Button nach links zu verschieben */
+    padding: 10px 50px;
+    border: solid 1px #b56576;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-row:hover button {
+    opacity: 1;
+    background-color: #b56576;
+    color: #fff;
+}
+
+/* Zusätzliches Styling für Checkboxen und Labels */
+
+label.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.checkbox-label input {
+    margin-right: 5px;
+}
+/************************************************************************************
+back top button
+*************************************************************************************/
+#floatlink {
+position:fixed;
+left: 30px;
+bottom: 20px;
+z-index:10;
+font: bold 12px georgia;
+letter-spacing: 0.2em;}
+
+#floatlink a:link {
+color:#aaaaaa;
+text-decoration:none;}
+#floatlink a:hover {
+color:#aaaaaa;
+text-decoration:none;}
+#floatlink a:visited {
+color:#aaaaaa;
+text-decoration:none;}
+
+/** datenschutz formatierung **/
+.ds_blockquote >p {font-style: italic}
