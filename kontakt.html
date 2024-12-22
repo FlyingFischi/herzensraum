@@ -24,7 +24,8 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <meta name="format-detection" content="telephone=no">
-
+<script src="lib/js/jquery.min.js"></script>
+<script src="lib/js/buddy.js" defer></script>
 </head>
 
 <body>
@@ -108,5 +109,12 @@
             <div id="impress"> <a href="impressum.html">Impressum + Datenschutzerklärung</a> </div>
           </footer>
         </div>
+        <div id="backToTop" onclick="scrollToTop()">↑</div>
+
+        <script>
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
         </body>
         </html>

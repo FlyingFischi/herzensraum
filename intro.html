@@ -24,7 +24,8 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <meta name="format-detection" content="telephone=no">
-
+<script src="lib/js/jquery.min.js"></script>
+<script src="lib/js/buddy.js" defer></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
       </nav>
     </header>
     <div id="content">
-        <img src="images_herzensraum/Türbild_limburg-Kopie.jpg" alt="Martina Frenzneck, Heilpraktikerin, Homöopathin">
+      <img src="images_herzensraum/Türbild_limburg.jpeg" alt="Martina Frenzneck, Traumatherapeutin">
         <!--adresse für mobilephone . sonst ausgeblendet--><!--<ul id="address_up"><li>Brandenburgstr. 47a | 14612 Falkensee | 0176 80528319</li><li><p>&nbsp;</p></li></ul>-->
       <div class="text">
       <h3>über mich</h3>
@@ -73,5 +74,12 @@
     <div id="impress"> <a href="impressum.html">Impressum + Datenschutzerklärung</a> </div>
   </footer>
 </div>
+<div id="backToTop" onclick="scrollToTop()">↑</div>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </body>
 </html>
