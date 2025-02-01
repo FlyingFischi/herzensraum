@@ -15,17 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstname = $_POST["firstname"];
     $lastname = $_POST["lastname"];
     $email = $_POST["email"];
-    $reference = $_POST["reference"];
-    $size = $_POST["size"];
-    $colors = $_POST["colors"];
-    $consent = isset($_POST["consent"]) ? "Ja" : "Nein";
     $notes = $_POST["notes"];
 
     // Empfänger-E-Mail-Adressen
-    $to_primary = "s.fischer374@protonmail.com";
+    $to_primary = "artbybodicco@bodicco.com";
 
     // Absenderadresse
-    $from = "s.fischer374@protonmail.com";
+    $from = "artbybodicco@bodicco.com";
 
     // Betreff
     $subject = "Neue Anfrage von $firstname $lastname";
@@ -83,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 } else {
     // Falls das Captcha falsch ist
-    echo "The answer to the math question was incorrect. Please try again.";
+    echo "Die Antwort ist leider nicht korrekt. Bitte versuchen Sie es erneut.";
 }
 
 } else {
