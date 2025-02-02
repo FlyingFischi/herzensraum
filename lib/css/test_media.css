@@ -163,7 +163,7 @@ iframe {width:100%;}
 
     .form-group {
         flex: 0 0 100%;
-        margin-left: 15; /* Entferne den rechten Abstand der Formularfelder */
+        margin-left: 15px; /* Entferne den rechten Abstand der Formularfelder */
         margin-bottom: 5px;
     }
 
@@ -194,4 +194,18 @@ iframe {width:100%;}
         color: #fff;
     }
 }
+
+@media screen and (max-width: 350px) {
+    /* Stelle sicher, dass alle kritischen Elemente die gewünschte Breite haben */
+    #content, .text {
+        width: 90% !important;
+    }
+
+    /* Falls sich Navigation oder andere Elemente verschieben, fixiere sie hier */
+    #main-nav {
+        text-align: center;
+        display: block;
+    }
+}
+
 }
