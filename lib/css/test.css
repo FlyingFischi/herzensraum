@@ -87,6 +87,7 @@ h4 {
 }
 h5 {
 	font-size: 1.1em;
+	color: #b56576;
 }
 h6 {
 	font-size: 1em;
@@ -250,9 +251,7 @@ FOOTER
 	color: #999; */
 }
 #footer a {
-	position:absolute;
-	right:0;
-	bottom:0;
+
 	font-style:italic;
 	color:#FFF;
 }
